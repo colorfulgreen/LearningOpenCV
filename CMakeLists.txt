@@ -16,5 +16,9 @@ else()
 endif()
 
 add_executable( 2-1 ch02/2-1.display.cpp )
+add_executable( 2-3 ch02/2-3.video.cpp )
+add_executable( 2-4 ch02/2-4.trackbar.cpp )
  
 target_link_libraries( 2-1 ${OpenCV_LIBS} )
+target_link_libraries( 2-3 ${OpenCV_LIBS} )
+target_link_libraries( 2-4 ${OpenCV_LIBS} )
