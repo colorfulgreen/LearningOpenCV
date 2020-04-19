@@ -7,13 +7,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 project(LearningOpenCV3)
 
 find_package( OpenCV REQUIRED )
-find_package( OpenGL )
 
-if(OPENGL_FOUND)
-  include_directories( ${OpenCV_INCLUDE_DIRS} ${OPENGL_INCLUDE_DIRS} )
-else()
-  include_directories( ${OpenCV_INCLUDE_DIRS} )
-endif()
+include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 add_executable( 2-1 ch02/1.display.cpp )
 add_executable( 2-3 ch02/3.video.cpp )
